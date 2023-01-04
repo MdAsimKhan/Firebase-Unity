@@ -15,6 +15,12 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject forgotPasswordPanel;
 
+    [SerializeField]
+    private GameObject scoreboardPanel;
+
+    [SerializeField]
+    private GameObject userdataPanel;
+
     private void Awake()
     {
         CreateInstance();
@@ -33,13 +39,17 @@ public class UIManager : MonoBehaviour
         loginPanel.SetActive(true);
         registrationPanel.SetActive(false);
         forgotPasswordPanel.SetActive(false);
+        userdataPanel.SetActive(false);
+        scoreboardPanel.SetActive(false);
     }
 
     public void OpenRegistrationPanel()
     {
         registrationPanel.SetActive(true);
-        loginPanel.SetActive(false);
         forgotPasswordPanel.SetActive(false);
+        loginPanel.SetActive(false);
+        userdataPanel.SetActive(false);
+        scoreboardPanel.SetActive(false);
     }
 
     public void OpenForgotPasswordPanel()
@@ -47,10 +57,30 @@ public class UIManager : MonoBehaviour
         forgotPasswordPanel.SetActive(true);
         loginPanel.SetActive(false);
         registrationPanel.SetActive(false);
+        userdataPanel.SetActive(false);
+        scoreboardPanel.SetActive(false);
     }
 
     public void GoBackToMainMenu()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("FirebaseAuth");
+    }
+
+    public void OpenScoreboardScreen()
+    {
+        forgotPasswordPanel.SetActive(false);
+        loginPanel.SetActive(false);
+        registrationPanel.SetActive(false);
+        userdataPanel.SetActive(false);
+        scoreboardPanel.SetActive(true);
+    }
+
+    public void OpenUserdataScreen()
+    {
+        forgotPasswordPanel.SetActive(false);
+        loginPanel.SetActive(false);
+        registrationPanel.SetActive(false);
+        userdataPanel.SetActive(true);
+        scoreboardPanel.SetActive(false);
     }
 }
