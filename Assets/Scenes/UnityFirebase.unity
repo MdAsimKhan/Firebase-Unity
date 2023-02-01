@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 109030134}
   - component: {fileID: 109030133}
   m_Layer: 5
-  m_Name: Back
+  m_Name: Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -662,7 +662,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1658905311}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: GoBackToMainMenu
+        m_MethodName: OpenLoginPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2676,7 +2676,7 @@ GameObject:
   - component: {fileID: 703815313}
   - component: {fileID: 703815318}
   m_Layer: 5
-  m_Name: Delete
+  m_Name: Delete Acount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6280,7 +6280,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

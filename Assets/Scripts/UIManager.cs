@@ -61,11 +61,6 @@ public class UIManager : MonoBehaviour
         scoreboardPanel.SetActive(false);
     }
 
-    public void GoBackToMainMenu()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("FirebaseAuth");
-    }
-
     public void OpenScoreboardScreen()
     {
         forgotPasswordPanel.SetActive(false);
